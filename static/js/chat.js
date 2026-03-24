@@ -11,6 +11,7 @@ const quickActions = document.getElementById("quickActions");
 const mobileMenu = document.getElementById("mobileMenu");
 const sidebar = document.getElementById("sidebar");
 const resetBtn = document.getElementById("resetBtn");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
 
 let currentStep = null;
 let isLoading = false;
@@ -75,20 +76,14 @@ function highlightStep(stepNum) {
 
 mobileMenu.addEventListener("click", () => {
     sidebar.classList.toggle("open");
-    let overlay = document.querySelector(".sidebar-overlay");
-    if (!overlay) {
-        overlay = document.createElement("div");
-        overlay.className = "sidebar-overlay";
-        overlay.addEventListener("click", closeSidebar);
-        document.body.appendChild(overlay);
-    }
-    overlay.classList.toggle("active");
+    sidebarOverlay.classList.toggle("active");
 });
+
+sidebarOverlay.addEventListener("click", closeSidebar);
 
 function closeSidebar() {
     sidebar.classList.remove("open");
-    const overlay = document.querySelector(".sidebar-overlay");
-    if (overlay) overlay.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
 }
 
 // ─── Reset Chat ─────────────────────────────────────────────────
