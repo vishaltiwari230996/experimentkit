@@ -1,0 +1,463 @@
+{
+  "experiment": "Karaoke Speaker Kit",
+  "subject": "Physics / Electronics",
+  "grade_relevance": "Class 6-10 NCERT Science",
+  "description": "Build your own Karaoke Speaker from scratch! This hands-on STEM experiment teaches students about sound, electronics, circuits, and mechanical assembly by constructing a fully functional Bluetooth karaoke speaker with microphone input, rechargeable battery, and volume control.",
+  "learning_objectives": [
+    "Understand how speakers convert electrical signals to sound waves",
+    "Learn about Bluetooth wireless communication",
+    "Understand basic circuit connections and PCB boards",
+    "Learn about rechargeable batteries and power management",
+    "Understand the role of potentiometers in volume control",
+    "Practice mechanical assembly and enclosure design"
+  ],
+  "ncert_connections": [
+    "Sound - Class 8 Chapter 13: How sound is produced and propagated",
+    "Electricity - Class 10 Chapter 12: Electric circuits, components, and connections",
+    "Magnetic Effects of Electric Current - Class 10 Chapter 13: Electromagnetic induction in speakers",
+    "Some Natural Phenomena - Class 8: Understanding energy conversion"
+  ],
+  "components": [
+    "Wooden panels (base, sides, front, rear)",
+    "Speaker driver (electromagnetic)",
+    "Bluetooth/Control PCB board",
+    "Microphone jack and holder",
+    "Type-C charging port",
+    "Rechargeable lithium battery",
+    "Power switch (on/off)",
+    "Potentiometer (volume control)",
+    "Volume knob",
+    "Wires (red/black for speaker, battery)",
+    "Cable ties",
+    "Screws"
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "step_id": "step1",
+      "title": "Base Panel Insertion",
+      "topic": "Base Structure",
+      "keywords": ["base panel", "first board", "insert base", "wooden slot"],
+      "image_url": "https://lh3.googleusercontent.com/d/16A_kQ_4BwmXBxNwjQWb4ahfq1GGZsbmQ",
+      "detailed_instructions": "Take the base panel (the largest flat wooden piece) and identify the slots on it. This forms the foundation of your karaoke speaker. Place it on a flat surface with the slots facing upward.",
+      "sub_steps": [
+        "Identify the base panel - it's the largest flat rectangular piece",
+        "Check for slots/grooves on the edges where side panels will fit",
+        "Place the base panel on a clean, flat work surface",
+        "Orient it so the speaker hole cutout is in the correct position"
+      ],
+      "science_concept": "The base provides structural support. In engineering, a strong foundation distributes weight evenly, just like how buildings need solid foundations.",
+      "safety_tips": ["Handle wooden pieces carefully to avoid splinters"],
+      "tools_needed": ["None - hand assembly"]
+    },
+    {
+      "step_number": 2,
+      "step_id": "step2",
+      "title": "Speaker Placement",
+      "topic": "Speaker Assembly",
+      "keywords": ["speaker", "round speaker", "place speaker", "mount speaker"],
+      "image_url": "https://lh3.googleusercontent.com/d/136KTuZe4rcfgksIW2lTurHlxwQWMEwJV",
+      "detailed_instructions": "Take the round speaker driver and place it into the designated circular cutout on the front panel. The speaker cone should face outward (the side from which sound will come out).",
+      "sub_steps": [
+        "Identify the speaker driver - it's the round component with a cone and magnet",
+        "Find the circular cutout on the base/front panel meant for the speaker",
+        "Orient the speaker so the cone (vibrating part) faces outward",
+        "Gently press the speaker into the cutout ensuring it sits flush"
+      ],
+      "science_concept": "A speaker works on the principle of electromagnetic induction (NCERT Class 10). When electric current flows through the voice coil in a magnetic field, it creates a force that moves the cone back and forth, producing sound waves.",
+      "safety_tips": ["Don't press the speaker cone directly - it's delicate", "Handle the speaker by its edges"],
+      "tools_needed": ["None - hand placement"]
+    },
+    {
+      "step_number": 3,
+      "step_id": "step3",
+      "title": "Secure Speaker",
+      "topic": "Speaker Fixing",
+      "keywords": ["screw speaker", "tighten speaker", "fix speaker screws"],
+      "image_url": "https://lh3.googleusercontent.com/d/1fwLQmR_ZDXUVsY02H1CSyty5_w0XNZBb",
+      "detailed_instructions": "Use the provided screws to secure the speaker in place. Tighten each screw evenly to ensure the speaker doesn't wobble or create vibration noise during playback.",
+      "sub_steps": [
+        "Align the screw holes on the speaker with the holes on the panel",
+        "Insert screws into each hole by hand first",
+        "Use a screwdriver to tighten each screw alternately (cross pattern)",
+        "Check that the speaker is firmly seated and doesn't move"
+      ],
+      "science_concept": "Securing the speaker prevents unwanted vibrations. Loose components cause rattling sounds (noise) instead of clean audio. This relates to resonance and vibration damping concepts.",
+      "safety_tips": ["Don't over-tighten screws as they may crack the wood", "Use gentle, even pressure"],
+      "tools_needed": ["Screwdriver (if not hand-tightened)"]
+    },
+    {
+      "step_number": 4,
+      "step_id": "step4",
+      "title": "Insert Mic Jack and Type C",
+      "topic": "Input & Charging Module",
+      "keywords": ["mic jack", "microphone port", "type c", "charging port", "usb port insert"],
+      "image_url": "https://lh3.googleusercontent.com/d/1mersmM8mIrjtop5QLREZDRK70irakd4S",
+      "detailed_instructions": "Insert the microphone jack (3.5mm audio port) and the Type-C USB charging port into their designated slots on the panel. These provide the audio input and power charging functionality.",
+      "sub_steps": [
+        "Identify the mic jack - it's a small cylindrical port (3.5mm)",
+        "Identify the Type-C port - it's the small rectangular USB connector",
+        "Find the corresponding cutouts on the panel",
+        "Push the mic jack into its slot until it clicks/fits snugly",
+        "Push the Type-C port into its slot ensuring proper alignment"
+      ],
+      "science_concept": "The 3.5mm jack carries analog audio signals from the microphone. Type-C USB carries power (5V) to charge the battery. These are standard connectors used globally - understanding standards is key in electronics engineering.",
+      "safety_tips": ["Don't force the connectors - they should slide in smoothly", "Ensure correct orientation"],
+      "tools_needed": ["None - push fit"]
+    },
+    {
+      "step_number": 5,
+      "step_id": "step5",
+      "title": "Attach Side Panel (Right)",
+      "topic": "Frame Assembly",
+      "keywords": ["second side panel", "right wall", "frame side"],
+      "image_url": "https://lh3.googleusercontent.com/d/1LteKDmRjVuI3g3sawL-8mo4mkaYszvrM",
+      "detailed_instructions": "Take the right side panel and insert it into the slots on the base panel. The tabs on the side panel should fit snugly into the grooves on the base.",
+      "sub_steps": [
+        "Identify the right side panel by checking its dimensions and slot pattern",
+        "Align the tabs on the bottom edge with the grooves on the base panel",
+        "Slide the side panel downward into the base slots",
+        "Ensure it stands upright at 90 degrees to the base"
+      ],
+      "science_concept": "Interlocking joints (tab and slot) are a fundamental engineering technique. They distribute force evenly and create rigid structures without adhesive - similar to how wooden furniture has been built for centuries.",
+      "safety_tips": ["Don't force - if it doesn't fit, check orientation"],
+      "tools_needed": ["None - slot fit"]
+    },
+    {
+      "step_number": 6,
+      "step_id": "step6",
+      "title": "Install Front Panel",
+      "topic": "Front Structure",
+      "keywords": ["front board", "front panel", "front side"],
+      "image_url": "https://lh3.googleusercontent.com/d/1WcKsdazLUMH3lmqlDQifshOb-QRLw6zR",
+      "detailed_instructions": "Attach the front panel to the assembly. This panel typically has the speaker opening and other port cutouts. Slide it into the front slots on the base and side panels.",
+      "sub_steps": [
+        "Identify the front panel - it has cutouts for the speaker and ports",
+        "Align with the front grooves on the base panel",
+        "Slide into the side panel slots simultaneously",
+        "Ensure all edges are flush and properly seated"
+      ],
+      "science_concept": "The front panel acts as a baffle in speaker design. A baffle separates the front and rear sound waves from the speaker driver, preventing them from canceling each other out (destructive interference).",
+      "safety_tips": ["Be gentle to avoid damaging the port cutouts"],
+      "tools_needed": ["None - slot fit"]
+    },
+    {
+      "step_number": 7,
+      "step_id": "step7",
+      "title": "Microphone Holder Placement",
+      "topic": "Mic Section",
+      "keywords": ["mic holder", "microphone slot", "mic section"],
+      "image_url": "https://lh3.googleusercontent.com/d/1z4ariiBhc_rn10I9fwpdbXiu0gtognr9",
+      "detailed_instructions": "Place the microphone holder into its designated slot. This holder will secure the microphone in the correct position for karaoke use.",
+      "sub_steps": [
+        "Find the microphone holder piece",
+        "Identify the slot on the top or side of the assembly for the mic holder",
+        "Insert the holder into the slot",
+        "Verify it can hold a microphone stably"
+      ],
+      "science_concept": "Microphones work on the reverse principle of speakers. While speakers convert electrical signals to sound, microphones convert sound waves into electrical signals using electromagnetic induction or capacitance changes.",
+      "safety_tips": ["Ensure the holder is firmly placed to prevent the mic from falling"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 8,
+      "step_id": "step8",
+      "title": "Insert Bluetooth/Control Board",
+      "topic": "PCB Installation",
+      "keywords": ["board install", "bluetooth board", "circuit board"],
+      "image_url": "https://lh3.googleusercontent.com/d/13PV1KeUxCB8UKOuLs4P5VLQH-ia-_kEw",
+      "detailed_instructions": "Carefully place the Bluetooth/control PCB board into its designated position inside the enclosure. This board is the brain of your karaoke speaker - it handles Bluetooth connectivity, audio processing, and power management.",
+      "sub_steps": [
+        "Handle the PCB board by its edges (avoid touching the components)",
+        "Identify the mounting position inside the enclosure",
+        "Align the board's ports (USB, audio) with the panel cutouts",
+        "Gently set the board into position"
+      ],
+      "science_concept": "PCB (Printed Circuit Board) contains integrated circuits that process digital signals. The Bluetooth chip uses radio waves (2.4 GHz) to receive audio wirelessly - this relates to electromagnetic waves studied in NCERT Class 12 Physics.",
+      "safety_tips": ["Handle PCB by edges only - static electricity can damage components", "Don't touch the chips or solder points"],
+      "tools_needed": ["None - careful hand placement"]
+    },
+    {
+      "step_number": 9,
+      "step_id": "step9",
+      "title": "Secure Control Board",
+      "topic": "PCB Fixing",
+      "keywords": ["screw board", "fix PCB", "tighten board"],
+      "image_url": "https://lh3.googleusercontent.com/d/10rcnV4whfRDAsXmUJaaWM0fU99UDOoJN",
+      "detailed_instructions": "Secure the control board using screws. The board must be firmly attached to prevent movement that could loosen wire connections during use.",
+      "sub_steps": [
+        "Align the screw holes on the PCB with the mounting holes",
+        "Insert screws carefully through the PCB holes",
+        "Tighten screws gently - PCBs can crack under excessive force",
+        "Verify the board doesn't move when gently pushed"
+      ],
+      "science_concept": "Proper mounting of electronics prevents mechanical stress on solder joints. Vibrations can cause cold solder joints to fail - this is why aerospace and automotive electronics use special vibration-resistant mounting.",
+      "safety_tips": ["Don't over-tighten - PCB boards are fragile", "Ensure screws don't short-circuit any traces on the board"],
+      "tools_needed": ["Screwdriver"]
+    },
+    {
+      "step_number": 10,
+      "step_id": "step10",
+      "title": "Insert Type-C Charging Port",
+      "topic": "Charging Module",
+      "keywords": ["type c", "charging port", "usb port"],
+      "image_url": "https://lh3.googleusercontent.com/d/1ItlX0n8R-3g8haUPhKSuVwSzmC6ZH3dh",
+      "detailed_instructions": "Insert the Type-C charging port module into its panel cutout. This port will allow you to charge the internal battery using any standard USB Type-C cable.",
+      "sub_steps": [
+        "Identify the Type-C port module",
+        "Find the rectangular cutout on the rear or side panel",
+        "Align the port with the cutout",
+        "Push it in firmly until flush with the panel surface"
+      ],
+      "science_concept": "USB Type-C is a universal connector standard that can carry up to 100W of power. It uses 5V for basic charging. The charging circuit inside converts AC patterns from USB to the correct voltage for the lithium battery (typically 3.7V-4.2V).",
+      "safety_tips": ["Ensure proper alignment before pushing in"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 11,
+      "step_id": "step11",
+      "title": "Place Rechargeable Battery",
+      "topic": "Power Module",
+      "keywords": ["battery", "rechargeable battery", "power source"],
+      "image_url": "https://lh3.googleusercontent.com/d/1738BJTX9RWcECKIPJvlkZvQ4GfWehiby",
+      "detailed_instructions": "Place the rechargeable lithium battery into the enclosure. Position it in the designated battery area, ensuring the wires can reach the control board.",
+      "sub_steps": [
+        "Identify the battery - it's a flat rectangular pack with red and black wires",
+        "Find the battery compartment area inside the enclosure",
+        "Place the battery flat with wires facing toward the control board",
+        "Ensure the battery isn't pressing against any sharp edges"
+      ],
+      "science_concept": "Rechargeable lithium batteries store energy through chemical reactions. During charging, lithium ions move from cathode to anode. During discharge, they move back, releasing electrical energy. This relates to NCERT Chapter on Chemical Effects of Electric Current.",
+      "safety_tips": ["NEVER puncture or bend the battery", "Don't short-circuit the red and black wires together", "Keep away from heat sources"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 12,
+      "step_id": "step12",
+      "title": "Secure Battery with Cable Tie",
+      "topic": "Battery Fixing",
+      "keywords": ["cable tie", "battery secure", "tie battery"],
+      "image_url": "https://lh3.googleusercontent.com/d/1t14ZfO4gD3j2jUQX7tPrgjame1NAS2x-",
+      "detailed_instructions": "Use a cable tie to secure the battery in place. Thread the cable tie through the provided slots and around the battery, then pull tight to prevent the battery from moving.",
+      "sub_steps": [
+        "Take a cable tie from the hardware pack",
+        "Thread one end through the slot in the base panel",
+        "Loop it over the battery",
+        "Thread through the opposite slot",
+        "Pull the cable tie tight and cut excess length"
+      ],
+      "science_concept": "Securing the battery prevents movement that could strain wire connections. In professional electronics, batteries are always mounted firmly - loose batteries in devices can cause short circuits or disconnect power unexpectedly.",
+      "safety_tips": ["Don't over-tighten the cable tie on the battery", "Cut the excess cable tie end to prevent it from interfering with other components"],
+      "tools_needed": ["Scissors (to cut excess cable tie)"]
+    },
+    {
+      "step_number": 13,
+      "step_id": "step13",
+      "title": "Connect Speaker Wires",
+      "topic": "Speaker Wiring",
+      "keywords": ["red wire", "black wire", "speaker connection"],
+      "image_url": "https://lh3.googleusercontent.com/d/1eJGhP61SJD4lh3qvUw2bH199Bt1VDeE1",
+      "detailed_instructions": "Connect the speaker wires to the control board. The speaker has two wires - typically red (positive) and black (negative). Connect them to the corresponding speaker output terminals on the PCB.",
+      "sub_steps": [
+        "Identify the speaker wires - red (+) and black (-)",
+        "Find the speaker output terminals on the control board (usually labeled SPK+ and SPK-)",
+        "Connect the red wire to SPK+ terminal",
+        "Connect the black wire to SPK- terminal",
+        "Ensure connections are firm and won't come loose"
+      ],
+      "science_concept": "The speaker wires carry amplified audio signals from the control board to the speaker. Red is positive (carries the signal) and black is ground/negative. Reversing polarity won't damage the speaker but can cause phase issues when multiple speakers are used together.",
+      "safety_tips": ["Ensure correct polarity - red to positive, black to negative", "Don't let bare wire ends touch each other"],
+      "tools_needed": ["None - plug/push connectors"]
+    },
+    {
+      "step_number": 14,
+      "step_id": "step14",
+      "title": "Connect Microphone Jack",
+      "topic": "Mic Wiring",
+      "keywords": ["mic cable", "mic jack", "plug mic"],
+      "image_url": "https://lh3.googleusercontent.com/d/1H27_jhWl_Da70rUNf8QiBZ_ZlA8W3rC5",
+      "detailed_instructions": "Connect the microphone jack's cable to the control board. This allows audio input from an external microphone for karaoke functionality.",
+      "sub_steps": [
+        "Locate the mic jack cable coming from the panel-mounted port",
+        "Find the microphone input connector on the control board",
+        "Plug the cable into the correct socket on the board",
+        "Ensure the connection is secure"
+      ],
+      "science_concept": "The microphone converts your voice (sound waves) into electrical signals through electromagnetic induction. The 3.5mm jack carries this analog signal to the control board where it gets amplified and mixed with the Bluetooth audio before being sent to the speaker.",
+      "safety_tips": ["Don't yank on cables", "Ensure proper connector alignment"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 15,
+      "step_id": "step15",
+      "title": "Install Power Switch",
+      "topic": "Switch Module",
+      "keywords": ["on off switch", "power button", "switch wiring"],
+      "image_url": "https://lh3.googleusercontent.com/d/1-HDPTp9Tfp4ieQcjKZYiYFs-s4xoKCFz",
+      "detailed_instructions": "Install the power switch into the panel cutout and connect its wires to the control board. This switch controls the ON/OFF state of the entire speaker system.",
+      "sub_steps": [
+        "Identify the power switch - it's a toggle or rocker switch",
+        "Find the switch cutout on the panel",
+        "Push the switch into the cutout until it clicks in place",
+        "Connect the switch wires to the power terminals on the control board"
+      ],
+      "science_concept": "A switch is the simplest circuit component - it either completes (closes) or breaks (opens) the circuit. When OFF, it creates an open circuit stopping current flow. This is the fundamental concept of electric circuits from NCERT Class 7 and Class 10.",
+      "safety_tips": ["Ensure the switch is in OFF position before connecting wires"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 16,
+      "step_id": "step16",
+      "title": "Check Internal Wiring",
+      "topic": "Connection Check",
+      "keywords": ["loose wire", "check connection", "wiring check"],
+      "image_url": "https://lh3.googleusercontent.com/d/1dq975bdKLxmzRGz5yL0w1mcQPT5vT6f_",
+      "detailed_instructions": "Before closing the enclosure, carefully inspect all internal wiring connections. Ensure no wires are loose, pinched, or touching where they shouldn't be.",
+      "sub_steps": [
+        "Check speaker wire connections - gently tug to verify they're secure",
+        "Check battery connections to the board",
+        "Check mic jack cable connection",
+        "Check power switch wiring",
+        "Verify no bare wires are touching each other or the battery",
+        "Ensure wires are routed neatly and won't get pinched when closing"
+      ],
+      "science_concept": "Quality checking is a critical step in manufacturing and engineering. Loose connections cause intermittent faults (the hardest to diagnose). Short circuits from touching wires can damage components. This step teaches systematic verification - a key engineering skill.",
+      "safety_tips": ["Keep the power switch OFF during inspection", "Look for any damaged wire insulation"],
+      "tools_needed": ["None - visual and manual check"]
+    },
+    {
+      "step_number": 17,
+      "step_id": "step17",
+      "title": "Insert Potentiometer",
+      "topic": "Volume Control Module",
+      "keywords": ["potentiometer", "volume control", "insert volume knob", "tighten nut", "sound control knob"],
+      "image_url": "https://lh3.googleusercontent.com/d/11YaXnL26I5P1HKFTgPykvDsmBkIE9eDc",
+      "detailed_instructions": "Insert the potentiometer through the panel hole and secure it with the provided nut. The potentiometer controls the volume of the speaker output.",
+      "sub_steps": [
+        "Identify the potentiometer - it's a small cylindrical component with a rotating shaft and 3 pins",
+        "Find the round hole on the panel designated for the volume control",
+        "Insert the shaft through the hole from inside",
+        "From outside, thread the nut onto the shaft",
+        "Tighten the nut to secure the potentiometer",
+        "Connect the potentiometer wires to the control board"
+      ],
+      "science_concept": "A potentiometer is a variable resistor (NCERT Class 10). By rotating the knob, you change the resistance in the audio signal path. Higher resistance = lower volume (less current/signal passes through). It works on Ohm's Law: V = IR.",
+      "safety_tips": ["Don't over-tighten the nut"],
+      "tools_needed": ["Small pliers or wrench for the nut"]
+    },
+    {
+      "step_number": 18,
+      "step_id": "step18",
+      "title": "Attach Volume Knob",
+      "topic": "Knob Fixing",
+      "keywords": ["fix knob", "attach knob", "knob fitting"],
+      "image_url": "https://lh3.googleusercontent.com/d/1Y3VYdwM_lSDRj0_ttSNJp4Vev6TiPgo4",
+      "detailed_instructions": "Push the volume knob onto the potentiometer shaft. This gives you a comfortable grip to rotate and adjust the volume.",
+      "sub_steps": [
+        "Take the volume knob",
+        "Align the knob's slot with the potentiometer shaft (D-shaped)",
+        "Push the knob firmly onto the shaft",
+        "Test by rotating - it should turn smoothly"
+      ],
+      "science_concept": "The knob is a simple machine concept - it increases the effective radius making rotation easier (mechanical advantage). This is related to the concept of torque: Torque = Force × radius. A larger knob requires less force to turn.",
+      "safety_tips": ["Push straight down to avoid bending the shaft"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 19,
+      "step_id": "step19",
+      "title": "Connect Battery to Circuit Board",
+      "topic": "Power Connection",
+      "keywords": ["battery wire", "power connection", "board power"],
+      "image_url": "https://lh3.googleusercontent.com/d/1gPbsNPd_aIqk6nSXLnjF5vycUMHAhKh_",
+      "detailed_instructions": "Connect the battery wires to the power input on the control board. This provides the electrical energy needed to run the speaker, Bluetooth, and amplifier circuits.",
+      "sub_steps": [
+        "Identify the battery connector on the control board (usually labeled BAT+ and BAT-)",
+        "Take the battery's red (+) wire",
+        "Connect red wire to BAT+ terminal",
+        "Connect black (-) wire to BAT- terminal",
+        "Ensure connectors are firmly plugged in"
+      ],
+      "science_concept": "The battery provides DC (Direct Current) power, typically 3.7V for lithium batteries. The control board has a power management IC that regulates this voltage to what each component needs. This connects to NCERT concepts of electric current, voltage, and circuit components.",
+      "safety_tips": ["ALWAYS connect correct polarity - reversing can damage the board permanently", "Keep the power switch OFF while connecting"],
+      "tools_needed": ["None - plug connector"]
+    },
+    {
+      "step_number": 20,
+      "step_id": "step20",
+      "title": "Close Rear Panel",
+      "topic": "Enclosure",
+      "keywords": ["back panel", "rear cover", "close back"],
+      "image_url": "https://lh3.googleusercontent.com/d/1n-wOnY7uRt0NJW4wR5hOBxewFqVlzVXK",
+      "detailed_instructions": "Attach the rear panel to close the back of the speaker enclosure. Ensure no wires get pinched between the panels.",
+      "sub_steps": [
+        "Gently tuck all wires inside the enclosure",
+        "Align the rear panel with the slots on the base and side panels",
+        "Slowly slide the panel into the slots",
+        "Check that no wires are being pinched as you close it",
+        "Ensure the panel sits flush with all other panels"
+      ],
+      "science_concept": "Closing the enclosure creates a sealed (or ported) speaker box. The enclosed air volume behind the speaker cone is crucial for bass response - this is called the speaker's acoustic suspension. The enclosure size and seal affect the frequency response.",
+      "safety_tips": ["Go slowly - don't pinch any wires", "If there's resistance, check for wire interference"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 21,
+      "step_id": "step21",
+      "title": "Secure Final Screws",
+      "topic": "Final Assembly",
+      "keywords": ["final screws", "close box", "tighten screws"],
+      "image_url": "https://lh3.googleusercontent.com/d/1WU2aPpUI7aJCd7hEq72_SYLiJtAsiBfc",
+      "detailed_instructions": "Use the remaining screws to secure all panels together. This gives the speaker its final structural integrity.",
+      "sub_steps": [
+        "Identify all screw holes on the exterior panels",
+        "Insert screws into each hole",
+        "Tighten screws in a cross pattern for even pressure",
+        "Verify all panels are secure and tight"
+      ],
+      "science_concept": "The cross/star pattern for tightening screws ensures even distribution of clamping force - this is the same technique used when changing car tires to prevent warping. It's an important engineering practice.",
+      "safety_tips": ["Don't over-tighten", "Check that nothing rattles when you gently shake the box"],
+      "tools_needed": ["Screwdriver"]
+    },
+    {
+      "step_number": 22,
+      "step_id": "step22",
+      "title": "Complete Body Assembly",
+      "topic": "Full Structure",
+      "keywords": ["full box", "enclosure complete", "body ready"],
+      "image_url": "https://lh3.googleusercontent.com/d/1KKsbGyVJis1hdzMzJxtubYMkvQOV0NTP",
+      "detailed_instructions": "The physical assembly is now complete! Your karaoke speaker body is fully constructed with all components installed inside.",
+      "sub_steps": [
+        "Do a final visual inspection of the exterior",
+        "Check that all panels are aligned and flush",
+        "Verify all screws are tight",
+        "Ensure all ports (USB, mic jack) are accessible"
+      ],
+      "science_concept": "You've completed the mechanical and electrical assembly of a complex electronic device. This combines principles from multiple NCERT chapters: materials science (wood selection), mechanics (structural assembly), electronics (circuit connections), and acoustics (speaker enclosure).",
+      "safety_tips": ["Give the box a gentle shake - nothing should rattle inside"],
+      "tools_needed": ["None"]
+    },
+    {
+      "step_number": 23,
+      "step_id": "step23",
+      "title": "Ready to Play",
+      "topic": "Output Stage",
+      "keywords": ["finished speaker", "ready to play", "final setup"],
+      "image_url": "https://lh3.googleusercontent.com/d/1WIhFnvLot8ErIHPp6q9MbkVBhgTavSpK",
+      "detailed_instructions": "Turn on the power switch and test your karaoke speaker! Connect via Bluetooth from your phone, play music, and try the microphone for karaoke.",
+      "sub_steps": [
+        "Flip the power switch to ON",
+        "Look/listen for a power-on indicator (LED or sound)",
+        "Enable Bluetooth on your phone",
+        "Search for the speaker in Bluetooth settings and pair",
+        "Play a song to test the speaker output",
+        "Plug in a microphone and test the karaoke feature",
+        "Adjust volume using the knob",
+        "If anything doesn't work, go back to Step 16 and recheck connections"
+      ],
+      "science_concept": "Your karaoke speaker demonstrates energy conversion: Electrical energy (battery) → Electromagnetic energy (Bluetooth radio waves) → Electrical signals (audio) → Mechanical energy (speaker cone vibration) → Sound energy (music you hear). This chain of energy conversions is a perfect example of conservation of energy (NCERT Class 9).",
+      "safety_tips": ["Start with the volume knob at minimum and gradually increase", "Don't play at maximum volume for extended periods to protect your hearing"],
+      "tools_needed": ["Smartphone with Bluetooth", "Microphone (optional for karaoke)"]
+    }
+  ]
+}

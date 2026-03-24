@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+Karoke Booklet (1).pdf
+AI Integration - Image mapping.csv
+extract_pdf.py
+test_chatbot.py
+test_llm.py
