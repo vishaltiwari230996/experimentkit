@@ -271,26 +271,78 @@ def format_step_response(step: dict, detail_level: str = "normal") -> dict:
     return response
 
 
+GUARDRAIL_RESPONSE = {
+    "text": (
+        "I appreciate your curiosity! However, I'm specifically designed to help you with the **Karaoke Speaker Kit** assembly experiment. "
+        "I can assist you with:\n\n"
+        "• 🔧 **Assembly steps** — detailed instructions for each of the 23 steps\n"
+        "• 📋 **Sub-steps** — breaking down any step into smaller, easier actions\n"
+        "• 🔬 **Science concepts** — the NCERT-related physics & electronics behind each step\n"
+        "• ⚠️ **Safety tips** — precautions for each step\n"
+        "• 🖼️ **Step images** — visual guides for assembly\n"
+        "• 🧰 **Components & tools** — what you need\n\n"
+        "Please ask me something about the experiment, and I'll be happy to help! 😊"
+    ),
+    "images": [],
+    "is_guardrail": True
+}
+
+
+def llm_scope_check(message: str) -> bool:
+    """Use LLM to check if a query is related to the Karaoke Speaker Kit experiment.
+    Returns True if relevant, False if off-topic. Falls back to False on errors."""
+    if not OPENROUTER_API_KEY or OPENROUTER_API_KEY == "your-openrouter-api-key-here":
+        return False
+
+    prompt = (
+        "You are a scope classifier for a STEM education chatbot about a Karaoke Speaker Kit assembly experiment.\n"
+        "The experiment involves building a Bluetooth karaoke speaker from wooden panels, speaker driver, Bluetooth PCB, "
+        "mic jack (3.5mm), Type-C charging, rechargeable battery, power switch, potentiometer, volume knob, wires, screws, "
+        "amplifier circuit, etc.\n\n"
+        "Relevant topics include: assembly steps, electronic components (jacks, connectors, PCBs, circuits, wires, batteries), "
+        "science concepts (sound, electricity, magnetism, electromagnetic induction, Ohm's law, frequency, resonance, vibration), "
+        "NCERT physics, STEM education, troubleshooting the kit, safety tips, and tools.\n\n"
+        "Is the following user question related to this experiment or its topics?\n"
+        f"User question: \"{message}\"\n\n"
+        "Reply with ONLY one word: YES or NO"
+    )
+
+    payload = json.dumps({
+        "model": LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 5,
+        "temperature": 0,
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://openrouter.ai/api/v1/chat/completions",
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+            "HTTP-Referer": "https://stem-karaoke-kit.vercel.app",
+            "X-Title": "STEM Karaoke Kit Chatbot",
+        },
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            answer = data["choices"][0]["message"]["content"].strip().upper()
+            return answer.startswith("YES")
+    except Exception as e:
+        print(f"LLM scope check failed: {e}")
+        return False
+
+
 def generate_response(message: str, context: dict) -> dict:
     """Generate a response: guardrails first, then LLM for in-scope queries."""
     msg_lower = message.lower().strip()
 
+    # Guardrail: keyword check first (fast, free). If that fails, ask LLM as fallback.
     if not is_in_scope(message):
-        return {
-            "text": (
-                "I appreciate your curiosity! However, I'm specifically designed to help you with the **Karaoke Speaker Kit** assembly experiment. "
-                "I can assist you with:\n\n"
-                "• 🔧 **Assembly steps** — detailed instructions for each of the 23 steps\n"
-                "• 📋 **Sub-steps** — breaking down any step into smaller, easier actions\n"
-                "• 🔬 **Science concepts** — the NCERT-related physics & electronics behind each step\n"
-                "• ⚠️ **Safety tips** — precautions for each step\n"
-                "• 🖼️ **Step images** — visual guides for assembly\n"
-                "• 🧰 **Components & tools** — what you need\n\n"
-                "Please ask me something about the experiment, and I'll be happy to help! 😊"
-            ),
-            "images": [],
-            "is_guardrail": True
-        }
+        if not llm_scope_check(message):
+            return GUARDRAIL_RESPONSE
 
     current_step = context.get("current_step", None)
     relevant_steps = find_relevant_steps(message)
