@@ -1,5 +1,5 @@
 /**
- * Karaoke Speaker Kit — STEM Chatbot Frontend
+ * STEM Experiment Kit — Multi-Kit Chatbot Frontend
  */
 
 const chatMessages = document.getElementById("chatMessages");
@@ -12,34 +12,99 @@ const mobileMenu = document.getElementById("mobileMenu");
 const sidebar = document.getElementById("sidebar");
 const resetBtn = document.getElementById("resetBtn");
 const sidebarOverlay = document.getElementById("sidebarOverlay");
+const kitSelector = document.getElementById("kitSelector");
+const sidebarTitle = document.getElementById("sidebarTitle");
+const sidebarSubtitle = document.getElementById("sidebarSubtitle");
+const headerBadge = document.getElementById("headerBadge");
 
 let currentStep = null;
 let isLoading = false;
+let currentKit = "karaoke";
+let totalSteps = 23;
+let kitName = "Karaoke Speaker Kit";
+
+// Kit display config
+const KIT_ICONS = {
+    "karaoke": "🎤",
+    "school_kit": "🔬",
+};
 
 // ─── Initialize ─────────────────────────────────────────────────
 
 document.addEventListener("DOMContentLoaded", () => {
+    loadKits();
+});
+
+// ─── Kit Loading ────────────────────────────────────────────────
+
+async function loadKits() {
+    try {
+        const res = await fetch("/api/kits");
+        const data = await res.json();
+        kitSelector.innerHTML = "";
+        data.kits.forEach((kit) => {
+            const option = document.createElement("option");
+            option.value = kit.kit_id;
+            option.textContent = `${KIT_ICONS[kit.kit_id] || "📦"} ${kit.name}`;
+            if (kit.kit_id === data.default) option.selected = true;
+            kitSelector.appendChild(option);
+        });
+        currentKit = data.default;
+        const defaultKit = data.kits.find(k => k.kit_id === data.default);
+        if (defaultKit) {
+            kitName = defaultKit.name;
+            totalSteps = defaultKit.num_steps;
+        }
+        kitSelector.addEventListener("change", onKitChange);
+        loadStepsSidebar();
+        showWelcomeMessage();
+    } catch (e) {
+        console.error("Failed to load kits:", e);
+        loadStepsSidebar();
+        showWelcomeMessage();
+    }
+}
+
+function onKitChange() {
+    const newKit = kitSelector.value;
+    if (newKit === currentKit) return;
+    currentKit = newKit;
+    currentStep = null;
+    chatMessages.innerHTML = "";
+    headerStep.innerHTML = "<span>No step selected</span>";
     loadStepsSidebar();
+    showWelcomeMessage();
+    updateQuickActions();
+}
+
+function showWelcomeMessage() {
+    const icon = KIT_ICONS[currentKit] || "📦";
     addBotMessage(
-        "Welcome to the **Karaoke Speaker Kit** Assembly Assistant! 🎤🔊\n\n" +
-        "I'll guide you through building your own Bluetooth karaoke speaker — a hands-on STEM experiment linked to NCERT Science.\n\n" +
+        `Welcome to the **${kitName}** Assistant! ${icon}🔊\n\n` +
+        "I'll guide you through the experiments — hands-on STEM learning linked to NCERT Science.\n\n" +
         "**I can help you with:**\n" +
-        "• Step-by-step assembly instructions with images\n" +
+        "• Step-by-step experiment instructions with images\n" +
         "• Detailed **sub-steps** for any step\n" +
         "• **Science concepts** (NCERT connections)\n" +
         "• **Safety tips** and required tools\n" +
         "• Troubleshooting help\n\n" +
-        "Try the quick buttons below, or ask me anything about the experiment!",
+        "Try the quick buttons below, or ask me anything about the experiments!",
         []
     );
-});
+}
 
 // ─── Sidebar Steps ──────────────────────────────────────────────
 
 async function loadStepsSidebar() {
     try {
-        const res = await fetch("/api/steps");
+        const res = await fetch(`/api/steps?kit=${currentKit}`);
         const data = await res.json();
+        kitName = data.experiment;
+        totalSteps = data.steps.length;
+        const icon = KIT_ICONS[currentKit] || "📦";
+        sidebarTitle.textContent = `${icon} ${kitName}`;
+        sidebarSubtitle.textContent = `${totalSteps}-Step Experiment Guide`;
+        headerBadge.textContent = `${kitName} • AI-Powered • NCERT Science`;
         stepList.innerHTML = "";
         data.steps.forEach((step) => {
             const div = document.createElement("div");
@@ -68,7 +133,7 @@ function highlightStep(stepNum) {
         el.classList.toggle("active", parseInt(el.dataset.step) === stepNum);
     });
     if (stepNum) {
-        headerStep.innerHTML = `<span>Step ${stepNum} of 23</span>`;
+        headerStep.innerHTML = `<span>Step ${stepNum} of ${totalSteps}</span>`;
     }
 }
 
@@ -95,10 +160,11 @@ function resetChat() {
     chatMessages.innerHTML = "";
     headerStep.innerHTML = "<span>No step selected</span>";
     document.querySelectorAll(".step-item").forEach((el) => el.classList.remove("active"));
+    const icon = KIT_ICONS[currentKit] || "📦";
     addBotMessage(
-        "Chat has been reset! 🔄\n\n" +
-        "Welcome back to the **Karaoke Speaker Kit** Assembly Assistant! 🎤🔊\n\n" +
-        "Ask me anything about the experiment — assembly steps, science concepts, safety tips, or troubleshooting!",
+        `Chat has been reset! 🔄\n\n` +
+        `Welcome back to the **${kitName}** Assistant! ${icon}🔊\n\n` +
+        "Ask me anything about the experiments — steps, science concepts, safety tips, or troubleshooting!",
         []
     );
     updateQuickActions();
@@ -151,6 +217,7 @@ async function sendMessage(text) {
             body: JSON.stringify({
                 message: text,
                 current_step: currentStep,
+                kit_id: currentKit,
             }),
         });
 
@@ -263,7 +330,7 @@ function updateQuickActions() {
         buttons.push({ label: "📝 Sub-steps", msg: `Show sub-steps for step ${currentStep}` });
         buttons.push({ label: "🔬 Concept", msg: `What is the science concept for step ${currentStep}?` });
         buttons.push({ label: "⚠️ Safety", msg: `Safety tips for step ${currentStep}` });
-        if (currentStep < 23) {
+        if (currentStep < totalSteps) {
             buttons.push({ label: "➡️ Next Step", msg: "Next step" });
         }
         if (currentStep > 1) {

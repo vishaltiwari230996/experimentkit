@@ -1,0 +1,952 @@
+{
+  "experiment": "School Electronics Experiment Kit",
+  "kit_id": "school_kit",
+  "subject": "Physics / Electronics",
+  "grade_relevance": "Class 6-10 NCERT Science",
+  "description": "A comprehensive electronics experiment kit with 25 hands-on experiments covering circuits, LEDs, motors, sensors, solar energy, and more. Students learn fundamental concepts of electricity, magnetism, and energy conversion through practical projects using EVA foam workstations, ring connectors, and push pins.",
+  "learning_objectives": [
+    "Understand basic circuit concepts — open, closed, series, and parallel circuits",
+    "Learn about electrical components — LEDs, resistors, transistors, switches, motors",
+    "Explore solar energy and energy conversion principles",
+    "Understand conductors and insulators through hands-on testing",
+    "Learn about electrolysis and chemical effects of electric current",
+    "Build practical projects like torch, doorbell, traffic light, and rain alarm",
+    "Understand transistor-based touch sensors",
+    "Learn about DC motors and speed control using potentiometers"
+  ],
+  "ncert_connections": [
+    "Electric Current and Its Effects — Class 7 Chapter 14: Simple circuits, heating and magnetic effects",
+    "Chemical Effects of Electric Current — Class 8 Chapter 14: Electrolysis, conductors and insulators",
+    "Electricity — Class 10 Chapter 12: Ohm's law, series and parallel circuits, resistance",
+    "Magnetic Effects of Electric Current — Class 10 Chapter 13: Motors, electromagnetic induction",
+    "Sources of Energy — Class 10 Chapter 14: Solar energy, renewable and non-renewable sources",
+    "Some Natural Phenomena — Class 8 Chapter 15: Understanding charge and current flow",
+    "Light — Class 8 Chapter 16: Reflection, optical illusion concepts"
+  ],
+  "components": [
+    "EVA Foam Workstation (base for experiments)",
+    "Ring connectors and push pins (for making connections)",
+    "LEDs (Light Emitting Diodes)",
+    "Resistors",
+    "Transistor (NPN — Collector, Base, Emitter)",
+    "9V Battery and battery snap connector",
+    "AA Battery and battery holder",
+    "Piezo Alarm/Buzzer",
+    "DC Motor with propeller",
+    "Switch (toggle type)",
+    "Potentiometer (variable resistor for speed control)",
+    "Solar Panel",
+    "Alligator clips",
+    "Wires (red and black with ring connectors)",
+    "Pencils (graphite — for pencil circuit)",
+    "Balloon and tape",
+    "Fan base cutouts",
+    "Solar panel stand cutout",
+    "Conical cup and aluminium foil (for torch)",
+    "Cardboard cutouts for torch cylinder"
+  ],
+  "troubleshooting": [
+    {
+      "problem": "LED/Piezo Alarm/Solar Panel not working",
+      "reason": "Mistakes in connecting +(ve) & -(ve) terminals",
+      "solution": "Connect the battery's (+) terminal to the (+) terminal of the component and battery's (-) terminal to their (-) terminal."
+    },
+    {
+      "problem": "How to connect Resistor?",
+      "reason": "Difficulty in placing resistor ends",
+      "solution": "Pierce the Resistor ends on the foam sheet through the connector rings."
+    },
+    {
+      "problem": "How to connect Transistor?",
+      "reason": "Difficulty in placing transistor legs",
+      "solution": "Pierce Transistor legs (Collector, Base & Emitter) on the foam sheet through the connector rings."
+    },
+    {
+      "problem": "Connections are right but components not working",
+      "reason": "Loose connections among components",
+      "solution": "Make sure connector rings touch each other properly and push pins are firmly inserted."
+    }
+  ],
+  "component_basics": [
+    "The red wire of the AA battery holder is positive (+), and the black wire is negative (-).",
+    "The red wire of the 9V battery is positive (+), and the black wire is negative (-).",
+    "The red wire of the piezo alarm is positive (+), and the black wire is negative (-).",
+    "The long leg of the LED is the positive terminal (+), and the short leg is the negative terminal (-).",
+    "A transistor has three legs: Collector (C), Base (B), and Emitter (E). With flat surface on your palm and curved surface up — right leg is Collector, middle is Base, left is Emitter."
+  ],
+  "precautions": [
+    "Never short-circuit the terminals of a 9V battery.",
+    "Never short-circuit the terminals of a AA battery.",
+    "Use the provided foam sheet as a workstation to perform the experiments.",
+    "To connect a resistor to wires, pierce ends of resistor through the foam sheet and pass them through the ring connectors.",
+    "To connect a resistor to an LED, wrap the resistor around the LED leg."
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "step_id": "exp1",
+      "title": "Simple Circuit",
+      "topic": "Basic Electricity",
+      "keywords": [
+        "simple circuit",
+        "basic circuit",
+        "closed circuit",
+        "first circuit",
+        "led circuit",
+        "aa battery"
+      ],
+      "image_url": "/static/images/school_kit/exp_1.png",
+      "detailed_instructions": "Build your first simple circuit using an LED and AA battery on the EVA foam workstation. Place one ring connector on top of the other and insert a push pin between them to connect. Connect the positive (red) wire of the battery holder to the long leg (+) of the LED, and the negative (black) wire to the short leg (-) of the LED.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Identify the AA battery holder — red wire is (+), black wire is (-)",
+        "Identify the LED — long leg is (+), short leg is (-)",
+        "Connect the red (+) wire to the long leg of the LED using ring connectors and push pin",
+        "Connect the black (-) wire to the short leg of the LED",
+        "Insert the AA battery into the holder — the LED should light up"
+      ],
+      "science_concept": "A simple circuit is a closed loop through which electric current flows. It needs a power source (battery), a load (LED), and connecting wires. When the circuit is complete (closed), electrons flow from the negative terminal through the circuit to the positive terminal, lighting the LED. This relates to NCERT Class 7 Chapter 14 — Electric Current and Its Effects.",
+      "safety_tips": [
+        "Don't short-circuit the battery terminals directly",
+        "Handle LED gently — legs can break if bent too much"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 2,
+      "step_id": "exp2",
+      "title": "LED Circuit with 9V Battery",
+      "topic": "LED and Voltage",
+      "keywords": [
+        "9v battery",
+        "led 9v",
+        "9 volt",
+        "led circuit 9v",
+        "bright led"
+      ],
+      "image_url": "/static/images/school_kit/exp_2.png",
+      "detailed_instructions": "Build an LED circuit using a 9V battery instead of an AA battery. The 9V battery provides higher voltage, making the LED brighter. Use a resistor to protect the LED from burning out due to excess current. Place ring connectors on the foam workstation and use push pins to make connections.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Connect the 9V battery snap connector to the battery",
+        "Connect a resistor in series with the LED to limit current",
+        "Connect the red (+) wire through the resistor to the LED's long leg (+)",
+        "Connect the black (-) wire to the LED's short leg (-)",
+        "The LED should glow brightly"
+      ],
+      "science_concept": "A 9V battery provides 6 times more voltage than a 1.5V AA battery. Without a resistor, this high voltage would push too much current through the LED and burn it out. The resistor limits current flow — this is an application of Ohm's Law (V = IR). NCERT Class 10 Chapter 12 — Electricity, explains how resistance controls current in a circuit.",
+      "safety_tips": [
+        "Always use a resistor with a 9V battery and LED to prevent burnout",
+        "Don't short-circuit the 9V battery terminals"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 3,
+      "step_id": "exp3",
+      "title": "Circuit with Switch (Open & Close)",
+      "topic": "Switches and Circuit Control",
+      "keywords": [
+        "switch",
+        "open circuit",
+        "close circuit",
+        "on off",
+        "circuit switch",
+        "toggle"
+      ],
+      "image_url": "/static/images/school_kit/exp_3.png",
+      "detailed_instructions": "Add a switch to your circuit to control when current flows. When the switch is open, the circuit is broken and the LED turns off. When the switch is closed, the circuit is complete and the LED lights up. Use the EVA foam workstation with ring connectors and push pins for connections.",
+      "sub_steps": [
+        "Set up a basic LED circuit on the foam workstation",
+        "Place the switch in series with the LED and battery",
+        "Connect one terminal of the switch to the battery's positive wire",
+        "Connect the other terminal of the switch to the LED's positive leg",
+        "Complete the circuit by connecting LED's negative leg to battery's negative wire",
+        "Toggle the switch ON — LED lights up (closed circuit)",
+        "Toggle the switch OFF — LED turns off (open circuit)"
+      ],
+      "science_concept": "A switch controls the flow of electric current by opening or closing the circuit. An open circuit has a gap — current cannot flow. A closed circuit is a complete path — current flows freely. This is the fundamental principle behind every electrical switch in your home! NCERT Class 7 Chapter 14 covers how switches work in electric circuits.",
+      "safety_tips": [
+        "Ensure connections are firm before toggling the switch",
+        "Don't touch bare wire ends while circuit is on"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 4,
+      "step_id": "exp4",
+      "title": "Pencil Circuit",
+      "topic": "Conductors and Graphite",
+      "keywords": [
+        "pencil circuit",
+        "graphite",
+        "pencil conductor",
+        "carbon circuit",
+        "pencil lead"
+      ],
+      "image_url": "/static/images/school_kit/exp_4.png",
+      "detailed_instructions": "Create a circuit using a pencil's graphite core as a conductor. Draw a thick dark line with a pencil on paper, then connect the circuit through the graphite line. The graphite (carbon) in the pencil acts as a resistor — the LED will glow dimly because graphite has higher resistance than metal wires.",
+      "sub_steps": [
+        "Draw a thick, dark pencil line (about 5-8 cm) on a piece of paper",
+        "Set up an LED circuit on the foam workstation",
+        "Place ring connectors at both ends of the pencil line",
+        "Connect one wire from the battery to one end of the pencil line",
+        "Connect the other end of the pencil line to the LED",
+        "Complete the circuit — the LED should glow dimly",
+        "Try making the line thicker or thinner to see the effect on brightness"
+      ],
+      "science_concept": "Graphite (pencil lead) is a form of carbon that conducts electricity, but with higher resistance than metals like copper. This experiment demonstrates that different materials have different electrical resistivity. The thicker the graphite line, the lower the resistance, and the brighter the LED glows. This connects to NCERT Class 8 Chapter 14 — Chemical Effects of Electric Current (conductors and insulators).",
+      "safety_tips": [
+        "Use a soft pencil (2B or higher) for better conductivity",
+        "Press firmly to make a thick graphite line"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Pencil (soft lead)",
+        "Paper"
+      ]
+    },
+    {
+      "step_number": 5,
+      "step_id": "exp5",
+      "title": "Series Circuit",
+      "topic": "Series Connection",
+      "keywords": [
+        "series circuit",
+        "series connection",
+        "leds in series",
+        "one path",
+        "series"
+      ],
+      "image_url": "/static/images/school_kit/exp_5.png",
+      "detailed_instructions": "Connect two or more LEDs in a series circuit where electricity flows through a single route, connecting all components in a line. In a series circuit, if one LED stops working, the entire circuit stops because the path is broken. Use the EVA foam workstation with ring connectors and push pins.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Identify two LEDs — note the (+) long leg and (-) short leg on each",
+        "Connect the battery's red (+) wire to the first LED's long leg",
+        "Connect the first LED's short leg to the second LED's long leg (series link)",
+        "Connect the second LED's short leg to the battery's black (-) wire",
+        "Both LEDs should light up — now remove one LED to see the other go off too"
+      ],
+      "science_concept": "A series circuit has only one path for current flow. The same current passes through every component. If any component breaks or is removed, the entire circuit stops working — just like old Christmas lights! The total resistance in a series circuit is the sum of all individual resistances (R_total = R1 + R2 + ...). NCERT Class 10 Chapter 12 — Electricity explains series and parallel circuits in detail.",
+      "safety_tips": [
+        "Handle LEDs gently while connecting in series",
+        "Don't force push pins — they're sharp"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 6,
+      "step_id": "exp6",
+      "title": "Parallel Circuit",
+      "topic": "Parallel Connection",
+      "keywords": [
+        "parallel circuit",
+        "parallel connection",
+        "leds parallel",
+        "multiple paths",
+        "parallel"
+      ],
+      "image_url": "/static/images/school_kit/exp_6.png",
+      "detailed_instructions": "Connect two or more LEDs in a parallel circuit where electricity flows through multiple routes, allowing each component to work independently. If one LED stops working, the others continue to glow. Use the EVA foam workstation with ring connectors and push pins.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Identify two LEDs and note their (+) and (-) legs",
+        "Connect both LEDs' long legs (+) together to the battery's red (+) wire",
+        "Connect both LEDs' short legs (-) together to the battery's black (-) wire",
+        "Both LEDs should light up with equal brightness",
+        "Remove one LED — the other continues to glow (unlike series circuit)"
+      ],
+      "science_concept": "A parallel circuit provides multiple paths for current flow. Each component gets the full battery voltage, so they glow equally bright. If one path breaks, current still flows through the other paths. Your home wiring uses parallel circuits — that's why turning off one light doesn't turn off all others! In parallel: 1/R_total = 1/R1 + 1/R2. NCERT Class 10 Chapter 12 — Electricity.",
+      "safety_tips": [
+        "Ensure correct polarity when connecting LEDs in parallel",
+        "Don't connect too many LEDs to a single battery"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 7,
+      "step_id": "exp7",
+      "title": "Simple Fan",
+      "topic": "DC Motor Basics",
+      "keywords": [
+        "simple fan",
+        "dc motor",
+        "fan",
+        "motor",
+        "propeller",
+        "spin"
+      ],
+      "image_url": "/static/images/school_kit/exp_7.png",
+      "detailed_instructions": "Build a simple fan using a DC motor, propeller, and 9V battery. Use cutout 1 from the booklet to make a fan base. Connect the motor directly to the battery — the propeller will spin, creating airflow like a fan.",
+      "sub_steps": [
+        "Assemble the fan base using cutout 1 from the cutout booklet",
+        "Attach the propeller to the DC motor shaft",
+        "Place the motor on the fan base",
+        "Connect the red (+) wire of the battery to one terminal of the DC motor",
+        "Connect the black (-) wire to the other terminal of the motor",
+        "The propeller should spin — you've made a simple fan!"
+      ],
+      "science_concept": "A DC motor converts electrical energy into mechanical energy (rotation). Inside the motor, a coil of wire sits in a magnetic field. When current flows through the coil, it experiences a force (Fleming's Left Hand Rule) that causes it to rotate. The propeller attached to the motor shaft then moves air. NCERT Class 10 Chapter 13 — Magnetic Effects of Electric Current.",
+      "safety_tips": [
+        "Keep fingers away from the spinning propeller",
+        "Don't touch motor terminals while connected to battery"
+      ],
+      "tools_needed": [
+        "Fan base cutout 1"
+      ]
+    },
+    {
+      "step_number": 8,
+      "step_id": "exp8",
+      "title": "Reversing Propeller Spin",
+      "topic": "Motor Direction and Polarity",
+      "keywords": [
+        "reverse",
+        "propeller spin",
+        "reverse motor",
+        "change direction",
+        "motor polarity",
+        "reverse rotation"
+      ],
+      "image_url": "/static/images/school_kit/exp_8.png",
+      "detailed_instructions": "Learn how to reverse the direction of a DC motor by swapping the battery connections. Connect the battery terminals to the opposite terminals of the motor to change its rotational direction. The propeller will spin in the opposite direction.",
+      "sub_steps": [
+        "Build the simple fan from Experiment 7",
+        "Note which direction the propeller is spinning",
+        "Disconnect the wires from the motor",
+        "Swap the connections — connect red wire to where black was, and vice versa",
+        "Connect to the battery again — the propeller now spins in the opposite direction!",
+        "Try switching back and forth to observe the direction change"
+      ],
+      "science_concept": "The direction of a DC motor's rotation depends on the direction of current flow through the coil. When you reverse the polarity (swap + and - connections), the current flows in the opposite direction, and the force on the coil reverses — so the motor spins the other way. This is based on Fleming's Left Hand Rule. NCERT Class 10 Chapter 13 — Magnetic Effects of Electric Current.",
+      "safety_tips": [
+        "Always disconnect battery before swapping wires",
+        "Keep fingers away from spinning propeller"
+      ],
+      "tools_needed": [
+        "Fan base cutout 1"
+      ]
+    },
+    {
+      "step_number": 9,
+      "step_id": "exp9",
+      "title": "Fan with Switch",
+      "topic": "Controlled Motor Circuit",
+      "keywords": [
+        "fan switch",
+        "motor switch",
+        "fan with switch",
+        "control fan",
+        "switch motor"
+      ],
+      "image_url": "/static/images/school_kit/exp_9.png",
+      "detailed_instructions": "Add a switch to your fan circuit to control when the motor spins. Place the switch in series with the DC motor and battery. Use the EVA foam workstation with ring connectors and push pins for connections. Toggle the switch to turn the fan on and off.",
+      "sub_steps": [
+        "Build the simple fan circuit on the EVA foam workstation",
+        "Place the switch in series between the battery and motor",
+        "Connect battery (+) to one terminal of the switch",
+        "Connect the other terminal of the switch to the motor",
+        "Connect the motor's other terminal to battery (-)",
+        "Use ring connectors and push pins for firm connections",
+        "Toggle the switch to turn the fan ON and OFF"
+      ],
+      "science_concept": "This combines the switch concept (Experiment 3) with the motor concept (Experiment 7). The switch acts as a gate — when open, no current flows and the motor is off. When closed, current flows and the motor spins. Every fan in your home uses this same principle! NCERT Class 7 Chapter 14 — Electric Current and Its Effects.",
+      "safety_tips": [
+        "Ensure firm connections to prevent sparking",
+        "Keep fingers away from propeller when switching on"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Fan base cutout 1"
+      ]
+    },
+    {
+      "step_number": 10,
+      "step_id": "exp10",
+      "title": "Speed Controller",
+      "topic": "Potentiometer and Variable Resistance",
+      "keywords": [
+        "speed controller",
+        "potentiometer",
+        "variable speed",
+        "motor speed",
+        "speed control",
+        "rheostat"
+      ],
+      "image_url": "/static/images/school_kit/exp_10.png",
+      "detailed_instructions": "Build a speed controller for your DC motor using a potentiometer (variable resistor). The potentiometer lets you adjust the resistance in the circuit, which changes the current flowing to the motor and thus controls its speed. Use the EVA foam workstation with ring connectors and push pins.",
+      "sub_steps": [
+        "Build the fan circuit on the EVA foam workstation",
+        "Place the potentiometer in series with the motor and 9V battery",
+        "Connect one end terminal of the potentiometer to the battery's (+) wire",
+        "Connect the middle (wiper) terminal to the motor",
+        "Connect the motor's other terminal to the battery's (-) wire",
+        "Use ring connectors and push pins for connections",
+        "Turn the potentiometer knob slowly — watch the motor speed change!"
+      ],
+      "science_concept": "A potentiometer is a variable resistor — turning its knob changes the resistance in the circuit. Higher resistance means less current flows (Ohm's Law: I = V/R), so the motor spins slower. Lower resistance means more current and faster spinning. This is how ceiling fan regulators and light dimmers work! NCERT Class 10 Chapter 12 — Electricity (variable resistance and Ohm's law).",
+      "safety_tips": [
+        "Turn the potentiometer slowly to avoid sudden speed changes",
+        "Don't set resistance to zero — it may damage the motor with too much current"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Fan base cutout 1"
+      ]
+    },
+    {
+      "step_number": 11,
+      "step_id": "exp11",
+      "title": "Touch Sensor LED",
+      "topic": "Transistor as a Switch",
+      "keywords": [
+        "touch sensor",
+        "touch led",
+        "transistor",
+        "sensor led",
+        "finger touch",
+        "touch circuit"
+      ],
+      "image_url": "/static/images/school_kit/exp_11.png",
+      "detailed_instructions": "Build a touch-sensitive LED circuit using a transistor (NPN). When you touch the base and collector legs of the transistor simultaneously with your finger, your body's small electrical resistance completes the circuit and the LED lights up. Refer to the transistor identification notes to correctly identify Collector, Base, and Emitter legs.",
+      "sub_steps": [
+        "Identify the transistor legs: Collector (C) = right, Base (B) = middle, Emitter (E) = left (flat surface facing away)",
+        "Pierce the transistor legs through the foam sheet",
+        "Connect the LED's long leg (+) to the Collector (C) of the transistor through a resistor",
+        "Connect battery (+) to the resistor/LED circuit",
+        "Connect the Emitter (E) to the battery (-)",
+        "Leave the Base (B) exposed for touching",
+        "Touch the Base and Collector simultaneously with your finger — the LED lights up!"
+      ],
+      "science_concept": "A transistor can act as an electronic switch. The NPN transistor has three terminals: Collector (C), Base (B), and Emitter (E). When a small current flows into the Base, it allows a much larger current to flow from Collector to Emitter — this is called amplification. Your finger provides enough resistance to let a tiny current flow into the Base, switching on the LED. NCERT Class 10 Chapter 13 (advanced concept).",
+      "safety_tips": [
+        "Handle the transistor carefully — legs are fragile",
+        "Refer to transistor identification page before connecting",
+        "Make sure your hands are dry for consistent results"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 12,
+      "step_id": "exp12",
+      "title": "Touch Sensor Alarm",
+      "topic": "Transistor-Based Alarm",
+      "keywords": [
+        "touch alarm",
+        "sensor alarm",
+        "touch buzzer",
+        "piezo alarm",
+        "touch sensor alarm",
+        "transistor alarm"
+      ],
+      "image_url": "/static/images/school_kit/exp_12.png",
+      "detailed_instructions": "Build a touch-activated alarm using a transistor and piezo buzzer. Similar to the Touch Sensor LED experiment, but replace the LED with a piezo alarm. When you touch the transistor's Base and Collector, the alarm sounds. Refer to the transistor identification notes.",
+      "sub_steps": [
+        "Identify the transistor legs: C (right), B (middle), E (left)",
+        "Pierce the transistor legs through the foam sheet",
+        "Connect the piezo alarm's red (+) wire to the Collector (C)",
+        "Connect battery (+) to the piezo alarm circuit",
+        "Connect the Emitter (E) to the battery (-)",
+        "Connect the piezo alarm's black (-) wire appropriately in the circuit",
+        "Touch Base and Collector simultaneously — the alarm sounds!"
+      ],
+      "science_concept": "This extends the transistor switch concept to power a piezo buzzer instead of an LED. A piezo buzzer contains a piezoelectric crystal that vibrates when electricity passes through it, producing sound. The transistor acts as a touch-activated switch — no mechanical parts needed! This is the basic principle behind modern touchscreens and touch-sensitive devices. NCERT Class 10 Chapter 13.",
+      "safety_tips": [
+        "The piezo alarm can be loud — don't hold it close to your ear",
+        "Refer to transistor identification page before connecting"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 13,
+      "step_id": "exp13",
+      "title": "LED-Alarm Dual Connection Play",
+      "topic": "Combined Circuit",
+      "keywords": [
+        "dual connection",
+        "led alarm",
+        "combined circuit",
+        "led and alarm",
+        "both led alarm"
+      ],
+      "image_url": "/static/images/school_kit/exp_13.png",
+      "detailed_instructions": "Create a circuit that connects both an LED and a piezo alarm together. Use ring connectors and push pins on the EVA foam workstation. This experiment demonstrates how multiple components can be connected in a single circuit to perform different functions simultaneously.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Set up the LED circuit with appropriate resistor",
+        "Add the piezo alarm in parallel with the LED",
+        "Connect both components to the battery through ring connectors",
+        "Use push pins to secure all connections on the foam sheet",
+        "Close the circuit — both the LED lights up and the alarm sounds simultaneously"
+      ],
+      "science_concept": "This experiment combines what you learned about LEDs and piezo alarms in a single circuit. When connected in parallel, each component gets the full battery voltage and works independently. The LED converts electrical energy to light, while the piezo buzzer converts it to sound — both are forms of energy conversion from electrical energy. NCERT Class 10 Chapter 12 — Electricity (parallel circuits).",
+      "safety_tips": [
+        "Use a resistor with the LED to protect it",
+        "The alarm can be loud — be prepared"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 14,
+      "step_id": "exp14",
+      "title": "Electrolysis",
+      "topic": "Chemical Effects of Current",
+      "keywords": [
+        "electrolysis",
+        "salt water",
+        "chemical effect",
+        "hydrogen",
+        "chlorine",
+        "gas",
+        "electrodes",
+        "pencil electrolysis"
+      ],
+      "image_url": "/static/images/school_kit/exp_14.png",
+      "detailed_instructions": "Perform electrolysis using pencils as electrodes in salt water. Chlorine gas is released at the pencil connected to the battery's positive (+) terminal, and hydrogen gas is released at the pencil connected to the negative (-) terminal. You'll see bubbles forming at both pencils.",
+      "sub_steps": [
+        "Fill a container with salt water (dissolve a spoonful of salt in water)",
+        "Sharpen two pencils at both ends to expose the graphite core",
+        "Dip the sharpened ends of both pencils into the salt water",
+        "Connect one pencil to the battery's positive (+) terminal using alligator clips or wires",
+        "Connect the other pencil to the battery's negative (-) terminal",
+        "Observe bubbles forming at both pencils — these are gases!",
+        "The pencil at (+) releases chlorine gas, the pencil at (-) releases hydrogen gas"
+      ],
+      "science_concept": "Electrolysis is the process of using electric current to drive a chemical reaction. When current passes through salt water (NaCl solution), it breaks down into its chemical components. At the positive electrode (anode), chlorine gas (Cl₂) is released. At the negative electrode (cathode), hydrogen gas (H₂) is released. The graphite in pencils acts as inert electrodes. NCERT Class 8 Chapter 14 — Chemical Effects of Electric Current.",
+      "safety_tips": [
+        "Perform this experiment in a well-ventilated area — chlorine gas has a sharp smell",
+        "Don't inhale the gases directly",
+        "Use salt water, not plain water, for better conductivity",
+        "Adult supervision recommended"
+      ],
+      "tools_needed": [
+        "Container with salt water",
+        "Two sharpened pencils",
+        "Alligator clips"
+      ]
+    },
+    {
+      "step_number": 15,
+      "step_id": "exp15",
+      "title": "Solar Powered Light",
+      "topic": "Solar Energy",
+      "keywords": [
+        "solar",
+        "solar light",
+        "solar power",
+        "solar panel",
+        "solar led",
+        "sun power",
+        "renewable"
+      ],
+      "image_url": "/static/images/school_kit/exp_15.png",
+      "detailed_instructions": "Use the solar panel to power an LED without any battery! Place the solar panel in sunlight and connect it to an LED using ring connectors and push pins on the EVA foam workstation. Use cutout 4 to make a solar panel stand.",
+      "sub_steps": [
+        "Assemble the solar panel stand using cutout 4",
+        "Place the solar panel on the stand, angled toward sunlight",
+        "Connect the solar panel's positive (+) wire to the LED's long leg (+)",
+        "Connect the solar panel's negative (-) wire to the LED's short leg (-)",
+        "Use ring connectors and push pins on the foam workstation",
+        "Place the setup in direct sunlight — the LED should light up!",
+        "Try shading the panel with your hand to see the LED dim or turn off"
+      ],
+      "science_concept": "Solar panels convert light energy directly into electrical energy using the photovoltaic effect. When photons (light particles) hit the solar cell, they knock electrons loose from silicon atoms, creating an electric current. This is a clean, renewable source of energy! The sun provides about 1000 watts per square meter of energy. NCERT Class 10 Chapter 14 — Sources of Energy.",
+      "safety_tips": [
+        "Don't look directly at the sun while positioning the solar panel",
+        "Handle the solar panel carefully — it can be fragile"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Solar panel stand cutout 4"
+      ]
+    },
+    {
+      "step_number": 16,
+      "step_id": "exp16",
+      "title": "The Energy Bridge",
+      "topic": "Conductors and Insulators",
+      "keywords": [
+        "energy bridge",
+        "conductor",
+        "insulator",
+        "test conductor",
+        "test insulator",
+        "material testing"
+      ],
+      "image_url": "/static/images/school_kit/exp_16.png",
+      "detailed_instructions": "Test different materials to determine which are conductors (allow electricity to pass) and which are insulators (block electricity). Place different objects like pencil nibs, salt water, rubber, plastic, spoons, and iron between the ring connectors. If the LED lights up, the material is a conductor. Use cutout 4 for the solar panel stand and a piece of cardboard.",
+      "sub_steps": [
+        "Set up an LED circuit with a gap between two ring connectors",
+        "The gap is your 'energy bridge' where you'll test materials",
+        "Place a metal spoon between the connectors — LED lights up (conductor!)",
+        "Replace with a rubber band — LED stays off (insulator!)",
+        "Test pencil graphite — LED glows dimly (weak conductor / resistor)",
+        "Test salt water — LED lights up (conductor due to dissolved ions)",
+        "Test plastic, paper, wood, iron nail, and other objects",
+        "Make a table of conductors vs insulators from your results"
+      ],
+      "science_concept": "Materials that allow electric current to pass through them easily are called conductors (metals, salt water, graphite). Materials that resist the flow of current are called insulators (rubber, plastic, wood, paper). Some materials are in between — they conduct partially and are called semiconductors. NCERT Class 8 Chapter 14 — Chemical Effects of Electric Current covers conductors and insulators.",
+      "safety_tips": [
+        "Don't test materials connected to household electricity",
+        "Be careful with salt water near electronic components",
+        "Wipe ring connectors clean between tests"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Various test materials",
+        "Piece of cardboard"
+      ]
+    },
+    {
+      "step_number": 17,
+      "step_id": "exp17",
+      "title": "Solar Windmill",
+      "topic": "Solar Energy to Mechanical Energy",
+      "keywords": [
+        "solar windmill",
+        "solar motor",
+        "solar fan",
+        "sun motor",
+        "solar propeller",
+        "renewable energy motor"
+      ],
+      "image_url": "/static/images/school_kit/exp_17.png",
+      "detailed_instructions": "Build a solar-powered windmill (fan) by connecting the solar panel to a DC motor with a propeller. Place in sunlight and watch the propeller spin without any battery! Use cutout 1 for the fan base and cutout 4 for the solar panel stand. Use ring connectors and push pins on the EVA foam workstation.",
+      "sub_steps": [
+        "Assemble the fan base using cutout 1 from the cutout booklet",
+        "Assemble the solar panel stand using cutout 4",
+        "Attach the propeller to the DC motor shaft",
+        "Place the motor on the fan base",
+        "Connect the solar panel's wires to the DC motor terminals",
+        "Use ring connectors and push pins on the foam workstation",
+        "Place the solar panel in direct sunlight — the propeller will spin!"
+      ],
+      "science_concept": "This experiment demonstrates double energy conversion: Solar energy → Electrical energy (via solar panel) → Mechanical energy (via DC motor). The solar panel generates electricity from sunlight, which drives the motor to spin the propeller. Real windmills work the opposite way — wind (mechanical) drives a generator to produce electricity! NCERT Class 10 Chapter 14 — Sources of Energy.",
+      "safety_tips": [
+        "Keep fingers away from spinning propeller",
+        "Handle solar panel carefully"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Fan base cutout 1",
+        "Solar panel stand cutout 4"
+      ]
+    },
+    {
+      "step_number": 18,
+      "step_id": "exp18",
+      "title": "Solar Optical Illusion",
+      "topic": "Persistence of Vision",
+      "keywords": [
+        "optical illusion",
+        "solar illusion",
+        "persistence of vision",
+        "visual trick",
+        "spinning disc"
+      ],
+      "image_url": "/static/images/school_kit/exp_18.png",
+      "detailed_instructions": "Create an optical illusion using solar-powered spinning. Connect the solar panel to a DC motor and attach a disc with patterns drawn on it. When the disc spins fast in sunlight, your eyes perceive an illusion due to persistence of vision. Use cutout 4 for the solar panel stand.",
+      "sub_steps": [
+        "Assemble the solar panel stand using cutout 4",
+        "Connect the solar panel to the DC motor",
+        "Create or use a patterned disc (e.g., with black and white segments)",
+        "Attach the disc to the motor shaft",
+        "Place the solar panel in direct sunlight to spin the disc",
+        "Observe the optical illusion as the disc spins — patterns blend and merge!",
+        "Try different patterns to create different illusions"
+      ],
+      "science_concept": "This experiment demonstrates persistence of vision — your eyes retain an image for about 1/16th of a second after it disappears. When the patterned disc spins fast enough, your brain blends consecutive images together, creating the illusion of movement or merged patterns. This is the same principle behind movies and TV — they show 24-30 frames per second, and your brain perceives smooth motion! NCERT Class 8 Chapter 16 — Light.",
+      "safety_tips": [
+        "Don't stare at the spinning disc for too long",
+        "Keep fingers away from the spinning motor shaft"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Solar panel stand cutout 4",
+        "Patterned disc"
+      ]
+    },
+    {
+      "step_number": 19,
+      "step_id": "exp19",
+      "title": "Home Supply System",
+      "topic": "Practical Circuit Design",
+      "keywords": [
+        "home supply",
+        "home circuit",
+        "supply system",
+        "fan and light",
+        "home wiring",
+        "practical circuit"
+      ],
+      "image_url": "/static/images/school_kit/exp_19.png",
+      "detailed_instructions": "Build a miniature home electrical supply system with an LED (representing a light) and a DC motor with propeller (representing a fan), each controlled by its own switch. This simulates how your home's electrical wiring works — each appliance has its own independent switch. Use the EVA foam workstation.",
+      "sub_steps": [
+        "Set up the EVA foam workstation",
+        "Connect an LED with a resistor to one switch (this is your 'room light')",
+        "Connect a DC motor with propeller to another switch (this is your 'ceiling fan')",
+        "Connect both circuits in parallel to the 9V battery",
+        "Toggle switch 1 — the LED (light) turns on/off independently",
+        "Toggle switch 2 — the motor (fan) turns on/off independently",
+        "Both can work simultaneously or independently — just like home wiring!"
+      ],
+      "science_concept": "Home electrical wiring uses parallel circuits — each room/appliance gets the same voltage from the main supply and has its own switch for independent control. If one appliance fails, others keep working. This experiment demonstrates this parallel wiring concept on a small scale. NCERT Class 10 Chapter 12 — Electricity (domestic electric circuits, parallel connections).",
+      "safety_tips": [
+        "Keep connections firm to prevent short circuits",
+        "Don't touch motor while running"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Fan base cutout 1"
+      ]
+    },
+    {
+      "step_number": 20,
+      "step_id": "exp20",
+      "title": "Traffic Light",
+      "topic": "Multi-LED Circuit with Switches",
+      "keywords": [
+        "traffic light",
+        "traffic signal",
+        "red yellow green",
+        "three led",
+        "traffic"
+      ],
+      "image_url": "/static/images/school_kit/exp_20.png",
+      "detailed_instructions": "Build a traffic light system using three LEDs (representing red, yellow, and green signals) with resistors and switches. Each LED is controlled by its own switch, simulating how traffic lights change. Use the EVA foam workstation with ring connectors and push pins.",
+      "sub_steps": [
+        "Set up the EVA foam workstation",
+        "Connect three LEDs (red, yellow, green) each with its own resistor",
+        "Connect each LED-resistor pair to its own switch",
+        "Wire all three circuits in parallel to the 9V battery",
+        "Toggle switches to simulate traffic light sequence:",
+        "  - Red ON (others OFF) → Stop",
+        "  - Yellow ON (others OFF) → Get Ready",
+        "  - Green ON (others OFF) → Go",
+        "Practice the traffic light sequence!"
+      ],
+      "science_concept": "This experiment combines parallel circuits with multiple switches to create a practical application. Each LED circuit is independent — controlled by its own switch. Real traffic lights use timers and microcontrollers to automatically switch between lights. The different colors are produced by different semiconductor materials in the LEDs. NCERT Class 10 Chapter 12 — Electricity (parallel circuits).",
+      "safety_tips": [
+        "Always use resistors with LEDs to prevent burnout",
+        "Ensure correct polarity for each LED"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 21,
+      "step_id": "exp21",
+      "title": "Rain Alarm",
+      "topic": "Water Conductivity Sensor",
+      "keywords": [
+        "rain alarm",
+        "water sensor",
+        "rain sensor",
+        "water alarm",
+        "rain detector",
+        "moisture sensor"
+      ],
+      "image_url": "/static/images/school_kit/exp_21.png",
+      "detailed_instructions": "Build a rain alarm that sounds a piezo buzzer when water bridges two exposed wire contacts. Use salt water to simulate rain. The water acts as a conductor between two open contacts, completing the circuit and triggering the alarm. Use alligator clips and secure wires with tape.",
+      "sub_steps": [
+        "Connect the 9V battery to the piezo alarm through two separated wire contacts",
+        "Leave a gap between the two contacts (open circuit — alarm is silent)",
+        "Use alligator clips for secure connections",
+        "Secure the wire with tape where needed",
+        "Place the exposed contacts where rain would fall",
+        "Drop salt water on the contacts — water bridges the gap",
+        "The alarm sounds! Water completes the circuit as a conductor"
+      ],
+      "science_concept": "Water (especially salt water) is an electrical conductor because dissolved salts create ions that carry electric charge. When rainwater (which contains dissolved minerals) bridges two exposed contacts, it completes the circuit, allowing current to flow and the alarm to sound. Pure distilled water is actually a poor conductor — it's the dissolved ions that conduct! NCERT Class 8 Chapter 14 — Chemical Effects of Electric Current.",
+      "safety_tips": [
+        "Keep the battery and buzzer dry — only the sensor contacts should get wet",
+        "Use salt water for reliable demonstration",
+        "Adult supervision recommended when using water near electronics"
+      ],
+      "tools_needed": [
+        "Alligator clips",
+        "Tape",
+        "Container with salt water"
+      ]
+    },
+    {
+      "step_number": 22,
+      "step_id": "exp22",
+      "title": "Tornado",
+      "topic": "Vortex and Air Pressure",
+      "keywords": [
+        "tornado",
+        "vortex",
+        "water tornado",
+        "spinning water",
+        "motor tornado",
+        "whirlpool"
+      ],
+      "image_url": "/static/images/school_kit/exp_22.png",
+      "detailed_instructions": "Create a mini tornado (vortex) in a glass of water using a DC motor with propeller. Hold the motor above a glass of water so the spinning propeller creates a whirlpool effect. The spinning motion creates a vortex that looks like a tornado.",
+      "sub_steps": [
+        "Fill a clear glass or transparent container with water",
+        "Attach the propeller to the DC motor",
+        "Connect the DC motor to the 9V battery",
+        "Hold the motor above the water surface with the propeller just touching the water",
+        "Switch on the motor — the spinning propeller creates a vortex in the water",
+        "Observe the tornado-like whirlpool forming in the center!"
+      ],
+      "science_concept": "The spinning propeller creates a rotational force in the water, forming a vortex — a spinning column of fluid. The center of the vortex has lower pressure than the surrounding water, which is the same principle behind real tornadoes! Tornadoes form when rotating air creates a low-pressure zone, pulling in surrounding air. This demonstrates how energy conversion (electrical → mechanical → fluid motion) creates natural phenomena. NCERT Class 9 — Force and Laws of Motion (circular motion concepts).",
+      "safety_tips": [
+        "Hold the motor firmly — it can vibrate while spinning",
+        "Don't let the motor fall into the water",
+        "Keep battery and connections away from water",
+        "Adult supervision recommended"
+      ],
+      "tools_needed": [
+        "Clear glass or container with water",
+        "Propeller"
+      ]
+    },
+    {
+      "step_number": 23,
+      "step_id": "exp23",
+      "title": "DIY Torch",
+      "topic": "Practical Circuit Application",
+      "keywords": [
+        "torch",
+        "flashlight",
+        "diy torch",
+        "make torch",
+        "handmade torch",
+        "led torch"
+      ],
+      "image_url": "/static/images/school_kit/exp_23.png",
+      "detailed_instructions": "Build a working flashlight/torch from scratch using a cardboard cylinder, aluminium foil cone reflector, LED, switch, and AA battery. Roll cutout 3 into a cylinder, create a reflective cone from a conical cup lined with aluminium foil, and assemble the circuit inside.",
+      "sub_steps": [
+        "Use cutout 3 and roll it into a cylinder (13cm x 3cm dimensions)",
+        "Cut a conical cup top and wrap aluminium foil inside it to create a reflector",
+        "Attach the cone to one end of the cylinder using strong adhesive",
+        "Build the LED circuit: connect AA battery to LED with a switch",
+        "Place the circuit inside the cylindrical torch case",
+        "Pierce holes for wires connected to the switch at the base",
+        "Paste the circle cutout (3.8cm) at the bottom of the cylinder",
+        "Press the switch to activate the torch — it works!"
+      ],
+      "science_concept": "A torch combines several science concepts: electrical circuits (battery + LED + switch), reflection of light (aluminium foil cone focuses the LED light forward), and energy conversion (chemical energy in battery → electrical energy → light energy). The cone-shaped reflector uses the principle of reflection to concentrate light into a beam. NCERT Class 8 Chapter 16 — Light (reflection) and Class 10 Chapter 12 — Electricity.",
+      "safety_tips": [
+        "Use scissors carefully when cutting cardboard",
+        "Apply adhesive in a well-ventilated area",
+        "Handle the sharp edges of cut aluminium foil carefully",
+        "Adult supervision recommended for cutting"
+      ],
+      "tools_needed": [
+        "Scissors",
+        "Strong adhesive/glue",
+        "Cutout 3 from booklet",
+        "Conical cup",
+        "Aluminium foil"
+      ]
+    },
+    {
+      "step_number": 24,
+      "step_id": "exp24",
+      "title": "Door Bell",
+      "topic": "Buzzer Circuit Application",
+      "keywords": [
+        "doorbell",
+        "door bell",
+        "bell",
+        "buzzer",
+        "piezo doorbell",
+        "press bell"
+      ],
+      "image_url": "/static/images/school_kit/exp_24.png",
+      "detailed_instructions": "Build a working doorbell using a piezo alarm/buzzer and a switch. Press the switch to complete the circuit and ring the doorbell. This simulates a real doorbell where pressing the button temporarily completes the circuit. Use the EVA foam workstation.",
+      "sub_steps": [
+        "Place the EVA foam workstation on a flat surface",
+        "Connect the piezo alarm's red (+) wire to the switch",
+        "Connect the other terminal of the switch to the battery's (+) terminal",
+        "Connect the piezo alarm's black (-) wire to the battery's (-) terminal",
+        "Mount the switch in an accessible position",
+        "Press the switch to ring the doorbell!",
+        "Release the switch — the bell stops (momentary contact)"
+      ],
+      "science_concept": "A doorbell uses a momentary switch — it completes the circuit only while you press it. The piezo buzzer inside vibrates using the piezoelectric effect: certain crystals produce vibrations when voltage is applied, creating sound waves. Modern doorbells may be wireless, but the basic principle of completing a circuit to activate a sound device remains the same. NCERT Class 7 Chapter 14 — Electric Current and Its Effects.",
+      "safety_tips": [
+        "The piezo alarm can be surprisingly loud",
+        "Don't hold the buzzer directly against your ear"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins"
+      ]
+    },
+    {
+      "step_number": 25,
+      "step_id": "exp25",
+      "title": "DIY Aluminium Switch",
+      "topic": "Making Your Own Switch",
+      "keywords": [
+        "aluminium switch",
+        "diy switch",
+        "homemade switch",
+        "make switch",
+        "aluminum switch",
+        "metal switch"
+      ],
+      "image_url": "/static/images/school_kit/exp_25.png",
+      "detailed_instructions": "Create your own switch using an aluminium strip! Place the aluminium strip between the open ends of the black wire to act as a switch. When the aluminium strip connects both wire ends, the circuit is complete and the LED lights up. Remove or lift the strip to break the circuit. Use the EVA foam workstation.",
+      "sub_steps": [
+        "Set up an LED circuit on the EVA foam workstation with a gap in the wire",
+        "Cut a small strip of aluminium foil",
+        "Place the aluminium strip between the open (disconnected) ends of the wire",
+        "When the aluminium touches both wire ends — the LED lights up (circuit closed)",
+        "Lift the aluminium strip — LED turns off (circuit open)",
+        "You've made your own DIY switch using a conductor!",
+        "Try other conducting materials to see if they also work as switches"
+      ],
+      "science_concept": "A switch is simply a device that can connect (close) or disconnect (open) a circuit. Aluminium is an excellent conductor of electricity — when it bridges two wire ends, current flows through it to complete the circuit. This experiment shows that any conductor can be used as a switch. Real switches use metallic contacts that physically touch or separate. NCERT Class 7 Chapter 14 — Electric Current and Its Effects.",
+      "safety_tips": [
+        "Aluminium foil edges can be sharp — handle carefully",
+        "Don't use very thin foil that might tear easily"
+      ],
+      "tools_needed": [
+        "EVA foam workstation",
+        "Push pins",
+        "Aluminium strip/foil"
+      ]
+    }
+  ]
+}

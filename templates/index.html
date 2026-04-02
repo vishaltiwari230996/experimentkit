@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karaoke Speaker Kit — STEM Assembly Assistant</title>
+    <title>STEM Experiment Kit — Assembly Assistant</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +16,13 @@
         <!-- Sidebar: Step Navigator -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <h2>🎤 Karaoke Speaker Kit</h2>
-                <p class="sidebar-subtitle">23-Step Assembly Guide</p>
+                <h2 id="sidebarTitle">🔬 Experiment Kit</h2>
+                <p class="sidebar-subtitle" id="sidebarSubtitle">Loading...</p>
+                <div class="kit-selector-wrapper">
+                    <select id="kitSelector" class="kit-selector">
+                        <!-- Populated by JS -->
+                    </select>
+                </div>
             </div>
             <div class="step-list" id="stepList">
                 <!-- Steps populated by JS -->
@@ -31,7 +36,7 @@
                 <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
                 <div class="header-info">
                     <h1>STEM Assembly Assistant</h1>
-                    <span class="header-badge">Karaoke Speaker Kit • AI-Powered • NCERT Science</span>
+                    <span class="header-badge" id="headerBadge">Experiment Kit • AI-Powered • NCERT Science</span>
                 </div>
                 <div class="header-step" id="headerStep">
                     <span>No step selected</span>
@@ -61,7 +66,7 @@
                 <div class="input-wrapper">
                     <textarea 
                         id="userInput" 
-                        placeholder="Ask about any assembly step, science concept, or request sub-steps..." 
+                        placeholder="Ask about any experiment step, science concept, or request sub-steps..." 
                         rows="1"
                         maxlength="500"
                     ></textarea>
