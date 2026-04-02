@@ -67,11 +67,13 @@ async function loadKits() {
 
 async function onKitChange() {
     const newKit = kitSelector.value;
+    console.log("[onKitChange] selected:", newKit, "current:", currentKit);
     if (newKit === currentKit) return;
     currentKit = newKit;
     currentStep = null;
     chatMessages.innerHTML = "";
     headerStep.innerHTML = "<span>No step selected</span>";
+    document.querySelectorAll(".step-item").forEach((el) => el.classList.remove("active"));
     await loadStepsSidebar();
     showWelcomeMessage();
     updateQuickActions();

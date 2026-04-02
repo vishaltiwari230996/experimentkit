@@ -716,11 +716,13 @@ def get_kits():
     kit_list = []
     for kid, k in KITS.items():
         kit_list.append({
-            "id": kid,
+            "kit_id": kid,
             "name": k["experiment_name"],
-            "steps": len(k["steps"]),
+            "num_steps": len(k["steps"]),
+            "subject": k["kb"].get("subject", ""),
+            "grade": k["kb"].get("grade_relevance", ""),
         })
-    return jsonify({"kits": kit_list})
+    return jsonify({"kits": kit_list, "default": DEFAULT_KIT})
 
 
 @app.route("/api/chat", methods=["POST"])
