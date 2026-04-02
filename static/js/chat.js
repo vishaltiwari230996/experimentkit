@@ -56,23 +56,23 @@ async function loadKits() {
             totalSteps = defaultKit.num_steps;
         }
         kitSelector.addEventListener("change", onKitChange);
-        loadStepsSidebar();
+        await loadStepsSidebar();
         showWelcomeMessage();
     } catch (e) {
         console.error("Failed to load kits:", e);
-        loadStepsSidebar();
+        await loadStepsSidebar();
         showWelcomeMessage();
     }
 }
 
-function onKitChange() {
+async function onKitChange() {
     const newKit = kitSelector.value;
     if (newKit === currentKit) return;
     currentKit = newKit;
     currentStep = null;
     chatMessages.innerHTML = "";
     headerStep.innerHTML = "<span>No step selected</span>";
-    loadStepsSidebar();
+    await loadStepsSidebar();
     showWelcomeMessage();
     updateQuickActions();
 }
